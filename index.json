@@ -1,0 +1,11 @@
+{
+  "org": "asimov-modules",
+  "repo": "asimov-openai-module",
+  "versions": [
+    {
+      "commit": "5188b23070d9e6093db67fb0b50c8ccde73f1bda",
+      "tag": "0.0.4",
+      "parsed_at": "2026-09-28T07:08:54.324474+00:00"
+    }
+  ]
+}
