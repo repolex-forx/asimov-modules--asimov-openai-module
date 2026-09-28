@@ -1,0 +1,17 @@
+[2026-09-28T07:05:20Z] === ENRICH ITERATION 1 START | repo=asimov-modules/asimov-openai-module sha=5188b230 ===
+[2026-09-28T07:05:20Z] [iter=1] PHASE START: enrich repo=asimov-modules/asimov-openai-module sha=5188b230 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/5188b230-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/5188b23070d9e6093db67fb0b50c8ccde73f1bda.nq.gz
+[2026-09-28T07:05:31Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=80 MB
+[2026-09-28T07:05:33Z] [iter=1] AST store loaded triples=8585 load_secs=1 mem_mb=101 MB
+[2026-09-28T07:05:33Z] [iter=1] Step 2: Finding LSP targets mem_mb=101 MB
+[2026-09-28T07:05:33Z] [iter=1] LSP targets found call_sites=95 imports=3 extends=0 implements=0 secs=0
+[2026-09-28T07:05:33Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=101 MB
+[2026-09-28T07:05:33Z] [iter=1] Position index built positions=591 nodes_with_types=733 secs=0 mem_mb=101 MB
+[2026-09-28T07:05:33Z] [iter=1] Step 3: Starting LSP resolution mem_mb=101 MB already_completed_types=[] already_completed_files=0
+[2026-09-28T07:05:33Z] [iter=1] Resolving target type target_type=call_site count=95
+[2026-09-28T07:06:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.7 files_done=0 resolved=0 errors=0 current=src/lib.rs
+[2026-09-28T07:06:18Z] [iter=1] Target type resolved target_type=call_site resolved=62 errors=1 secs=46 mem_mb=101 MB
+[2026-09-28T07:06:18Z] [iter=1] Resolving target type target_type=import_statement count=3
+[2026-09-28T07:06:24Z] [iter=1] Target type resolved target_type=import_statement resolved=3 errors=0 secs=6 mem_mb=101 MB
+[2026-09-28T07:06:35Z] [iter=1] Step 5: Writing final enrichment file triples=782
+[2026-09-28T07:06:35Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/5188b23070d9e6093db67fb0b50c8ccde73f1bda.nq.gz size_kb=10
+[2026-09-28T07:06:35Z] [iter=1] PHASE END: enrich elapsed_s=75 elapsed_min=1.3 total_triples=782
